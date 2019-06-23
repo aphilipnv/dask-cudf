@@ -51,3 +51,4 @@ pip install -e .
 
 py.test --cache-clear --junitxml=${WORKSPACE}/junit-dask-cudf.xml -v --cov-config=.coveragerc --cov=dask_cudf --cov-report=xml:${WORKSPACE}/dask-cudf-coverage.xml --cov-report term
 
+conda install -c conda-forge codecov && codecov -t $CODECOV_TOKEN
